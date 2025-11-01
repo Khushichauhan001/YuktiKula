@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* fonts etc */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+@layer utilities {
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  /* .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  } */
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
