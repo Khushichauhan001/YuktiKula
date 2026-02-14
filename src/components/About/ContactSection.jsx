@@ -16,7 +16,7 @@ export default function ContactSection() {
         <h3 className="text-yellow-400 text-3xl lg:text-4xl font-bold mt-12 mb-8">
           Connect with us on:
         </h3>
-        <div className="scale-125">
+        <div className="scale-125 flex justify-center gap-8">
           <SocialIcons />
         </div>
       </div>

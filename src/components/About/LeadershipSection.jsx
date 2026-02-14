@@ -4,7 +4,7 @@ export default function LeadershipSection() {
   return (
     <div className="py-16 px-6 sm:px-8 lg:px-12">
       <div className="max-w-full mx-auto">
-        <div className="ml-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           
           {/* Leaders Row */}
           <div className="flex flex-col md:flex-row gap-10 justify-center">

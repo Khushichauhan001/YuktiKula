@@ -13,10 +13,10 @@ function App() {
       {/* The 'relative' class is crucial here so the 'fixed' Navbar 
          doesn't get lost and the Home content has a coordinate base.
       */}
-      <div className="min-h-screen w-full relative">
+      <div className=" min-h-screen w-full relative">
         <Navbar />
         
-        <main className="relative z-10 bg-black/60 min-h-screen w-full sm:w-full"> 
+        <main className="relative z-10 bg-black/60 min-h-screen w-full"> 
           <Routes>
             {/* This ensures the Home page loads at http://localhost:5173/ */}
             <Route path="/" element={<Home />} />
