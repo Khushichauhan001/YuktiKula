@@ -23,7 +23,7 @@ export default function TeamCard({ team }) {
   return (
     <div 
       ref={cardRef}
-      className={`relative w-full h-[28rem] transition-all duration-300 transform-gpu ${
+      className={`relative w-full h-[18rem] transition-all duration-300 transform-gpu ${
         isFlipped ? 'scale-105 -translate-y-2 z-10' : 'hover:scale-105 hover:-translate-y-2 z-0'
       }`}
       style={{ perspective: '1000px' }}
@@ -41,10 +41,10 @@ export default function TeamCard({ team }) {
             alt={team.name}
             className="absolute inset-0 w-full h-full object-cover opacity-80"
           />
-          <h3 className="text-2xl font-bold text-white mb-4 z-10">{team.name}</h3>
+          <h3 className="text-2xl font-bold text-[#f9f9f9] mb-4 z-10">{team.name}</h3>
           <button 
             onClick={handleFlip}
-            className="mb-6 px-8 py-3 bg-white bg-opacity-15 backdrop-blur-sm rounded-full text-yellow-400 border border-transparent hover:border-orange-500 hover:text-orange-500 transition-all z-10 text-lg font-semibold"
+            className="mb-6 px-8 py-3 bg-[#f9f9f91f] bg-opacity-15 backdrop-blur-sm rounded-full text-yellow-400 border border-transparent hover:border-orange-500 hover:text-orange-500 transition-all z-10 text-lg font-semibold"
           >
             Know More
           </button>
@@ -53,7 +53,7 @@ export default function TeamCard({ team }) {
 
       {/* Back */}
       <div 
-        className={`absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-900 to-yellow-700 transition-all duration-300 transform-gpu ${
+        className={`absolute inset-0 rounded-2xl bg-gradient-to-br from-[#0b1d3d9e] to-[#4a410261] transition-all duration-300 transform-gpu ${
           isFlipped ? 'opacity-100 rotate-y-0' : 'opacity-0 rotate-y-180'
         } backface-hidden`}
         style={{ transformStyle: 'preserve-3d' }}
@@ -69,7 +69,7 @@ export default function TeamCard({ team }) {
         </div>
         
         {/* Scrollable Content with proper scrollbar styling */}
-        <div className="pt-16 pb-8 px-6 h-full overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-600 scrollbar-thumb-rounded-full scrollbar-track-yellow-900">
+        <div className="pt-16 pb-8 px-6 h-full overflow-y-auto team-card-scroll">
           <div className="pr-2"> {/* Add right padding to compensate for scrollbar */}
             <p className="text-white text-base mb-6 leading-relaxed">{team.description}</p>
             

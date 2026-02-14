@@ -2,7 +2,7 @@ import SocialIcons from '../../components/Layout/SocialIcons';
 
 export default function ContactSection() {
   return (
-    <div className="py-16 px-6 sm:px-8 lg:px-12 text-center bg-gray-800">
+    <div className="py-16 px-6 sm:px-8 lg:px-12 text-center">
       <div className="max-w-4xl mx-auto">
         <h3 className="text-yellow-400 text-3xl lg:text-4xl font-bold mt-8 mb-6">
           Reach Us:

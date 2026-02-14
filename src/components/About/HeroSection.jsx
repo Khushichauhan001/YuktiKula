@@ -27,7 +27,7 @@ export default function HeroSection() {
   }, [text, isDeleting, phraseIndex, phrases]);
 
   return (
-    <div className="py-20 px-6 sm:px-8 lg:px-12 text-center">
+    <div className="py-30 px-6 sm:px-8 lg:px-12 text-center">
       <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-roboto-condensed mb-8 border-b-2 border-white pb-4 inline-block">
         ABOUT <span className="text-yellow-400">YUKTIKULA</span> COMMUNITY
       </h1>

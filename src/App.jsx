@@ -16,7 +16,7 @@ function App() {
       <div className="min-h-screen w-full relative">
         <Navbar />
         
-        <main className="relative z-10 bg-black/60 min-h-screen w-full"> 
+        <main className="relative z-10 bg-black/60 min-h-screen w-full sm:w-full"> 
           <Routes>
             {/* This ensures the Home page loads at http://localhost:5173/ */}
             <Route path="/" element={<Home />} />

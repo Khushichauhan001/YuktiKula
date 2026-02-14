@@ -4,7 +4,7 @@ export default function ContributorsSection() {
   return (
     <div className="py-16 px-6 sm:px-8 lg:px-12">
       <div className="max-w-full mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-12 bg-gradient-to-b from-white to-white bg-opacity-15 rounded-xl px-8 py-4 text-yellow-400 w-fit font-montserrat mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-12 bg-gradient-to-b from-[#f9f9f91f] to-[#f9f9f91f] bg-opacity-15 rounded-xl px-8 py-4 text-yellow-400 w-fit font-montserrat mx-auto">
           Meet The Developers of Our Website
         </h2>
         
@@ -12,7 +12,7 @@ export default function ContributorsSection() {
           {contributorsData.map((contributor, index) => (
             <div 
               key={index}
-              className="bg-white bg-opacity-15 border-2 border-white border-opacity-20 rounded-2xl p-6 cursor-pointer hover:bg-opacity-25 transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-[#18263f66] bg-opacity-15 border-2 border-[#e3dac345] border-opacity-20 rounded-2xl p-6 cursor-pointer hover:bg-opacity-25 transition-all duration-300 hover:scale-105 shadow-lg"
             >
               <div className="text-yellow-400 font-bold text-xl mb-2">
                 {contributor.name}

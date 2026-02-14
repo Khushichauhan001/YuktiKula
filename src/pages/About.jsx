@@ -6,7 +6,7 @@ import ContactSection from '../components/About/ContactSection';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen text-white">
       <div className="max-w-full mx-auto"> {/* Remove max-width restriction */}
         <HeroSection />
         <LeadershipSection />
