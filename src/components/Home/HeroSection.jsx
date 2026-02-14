@@ -4,10 +4,20 @@ const HeroSection = () => {
   return (
     <section className="relative flex min-h-[100vh] items-center justify-center text-center overflow-hidden">
       <div className="pb-20 animate-zoomFadeIn pt-20">
-        <h1 className="font-playfair font-bold text-4xl sm:text-6xl md:text-7xl text-[#face52] border-b-2 border-[#face52] pb-6">
-          <span className="text-2.5xl sm:text-5xl md:text-6xl block mb-10">WELCOME TO</span>
-          <span className="text-2.5xl">YUKTIKULA COMMUNITY</span>
+        <h1 className="font-playfair font-bold text-[#face52] flex flex-col items-center">
+          <span className="text-2xl sm:text-5xl md:text-6xl mb-2 sm:mb-8">
+            WELCOME TO
+          </span>
+  
+          <div className="relative inline-block">
+            <span className="text-3xl sm:text-6xl md:text-7xl">
+              YUKTIKULA COMMUNITY
+            </span>
+    
+            <div className="w-full h-[2px] bg-[#face52] mt-2 sm:mt-4"></div>
+          </div>
         </h1>
+
         <p className="text-sm sm:text-base my-4 sm:my-6 md:my-10">
           Official Club of Computer Science and Engineering, Data Science Department.
         </p>

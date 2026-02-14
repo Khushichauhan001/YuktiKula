@@ -22,10 +22,11 @@ export default function TeamsSection() {
           py-6
         ">
           {teamsData.map(team => (
-            <div key={team.id} className="w-full max-w-96 transform-gpu p-4">
-              <TeamCard team={team} />
-            </div>
-          ))}
+  /* Add the id attribute here */
+  <div key={team.id} id={team.id.toString()} className="w-full max-w-96 transform-gpu p-4">
+    <TeamCard team={team} />
+  </div>
+))}
         </div>
       </div>
     </div>

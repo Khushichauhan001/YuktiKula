@@ -4,6 +4,7 @@ import About from './pages/About'
 import Home from './pages/Home';
 import Navbar from './components/Layout/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Layout/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
             {/* This loads the About page at http://localhost:5173/about */}
             <Route path="/about" element={<About />} />
           </Routes>
+          <Footer />
         </main>
       </div>
     </Router>

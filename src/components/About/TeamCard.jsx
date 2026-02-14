@@ -1,11 +1,31 @@
 import { useState, useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function TeamCard({ team }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const cardRef = useRef(null);
+  const location = useLocation();
 
   const handleFlip = () => setIsFlipped(!isFlipped);
   const handleClose = () => setIsFlipped(false);
+
+  useEffect(() => {
+    // Check if the current hash matches this card's ID
+    if (location.hash === `#${team.id}`) {
+      setIsFlipped(true);
+      
+      // We use a small timeout to ensure the DOM has finished rendering 
+      // before attempting to scroll to the card
+      const timer = setTimeout(() => {
+        cardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+      
+      return () => clearTimeout(timer);
+    } else {
+      // Optional: Close other cards when a new hash is selected
+      setIsFlipped(false);
+    }
+  }, [location.hash, team.id]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

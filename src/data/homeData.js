@@ -29,11 +29,11 @@ export const timelineItems = [
 ];
 
 export const teams = [
-  { name: "Tech Team", id: "tech-team-card" },
-  { name: "Management Team", id: "management-team-card" },
-  { name: "Social Media Team", id: "social-media-team-card" },
-  { name: "PR Team", id: "pr-team-card" },
-  { name: "Design & Media Team", id: "design-media-team-card" },
-  { name: "Editorial Team", id: "editorial-team-card" },
-  { name: "Production Team", id: "production-team-card" }
+  { name: "Tech Team", id: 1 },
+  { name: "Management Team", id: 2 },
+  { name: "Social Media Team", id: 3 },
+  { name: "PR Team", id: 4 },
+  { name: "Design and Media Team", id: 5 },
+  { name: "Editorial Team", id: 6 },
+  { name: "Production Team", id: 7 }
 ];
