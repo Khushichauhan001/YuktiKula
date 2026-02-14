@@ -1,14 +1,32 @@
 import { useState } from 'react'
 import './App.css'
 import About from './pages/About'
+import Home from './pages/Home';
+import Navbar from './components/Layout/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <About />
-    </div>
+    <Router>
+      {/* The 'relative' class is crucial here so the 'fixed' Navbar 
+         doesn't get lost and the Home content has a coordinate base.
+      */}
+      <div className="min-h-screen w-full relative">
+        <Navbar />
+        
+        <main className="relative z-10 bg-black/60 min-h-screen w-full"> 
+          <Routes>
+            {/* This ensures the Home page loads at http://localhost:5173/ */}
+            <Route path="/" element={<Home />} />
+            
+            {/* This loads the About page at http://localhost:5173/about */}
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   )
 }
 
