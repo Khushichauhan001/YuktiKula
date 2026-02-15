@@ -15,7 +15,7 @@ const TimelineSection = () => {
 
       <div className="relative flex flex-col items-center w-full max-w-4xl">
         {/* Vertical Line - Hidden on mobile */}
-        <div className="absolute top-[99px] left-[68px] w-1 bg-gradient-to-r from-white to-white shadow-[0_0_15px_#00f5ff] h-[calc(100%-190px)] hidden sm:block"></div>
+        {/* <div className="absolute top-[99px] left-[68px] w-1 bg-gradient-to-r from-white to-white shadow-[0_0_15px_#00f5ff] h-[calc(100%-190px)] hidden sm:block"></div> */}
 
         {timelineItems.map((item) => (
           <div key={item.id} className="flex flex-row justify-center items-center gap-5 w-full my-6 px-5">
