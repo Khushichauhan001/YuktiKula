@@ -1,34 +1,34 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import About from './pages/About'
+import Home from './pages/Home';
+import Navbar from './components/Layout/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Layout/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      {/* The 'relative' class is crucial here so the 'fixed' Navbar 
+         doesn't get lost and the Home content has a coordinate base.
+      */}
+      <div className=" min-h-screen w-full relative">
+        <Navbar />
+        
+        <main className="relative z-10 bg-black/60 min-h-screen w-full"> 
+          <Routes>
+            {/* This ensures the Home page loads at http://localhost:5173/ */}
+            <Route path="/" element={<Home />} />
+            
+            {/* This loads the About page at http://localhost:5173/about */}
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </Router>
   )
 }
 
