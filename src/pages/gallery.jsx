@@ -51,10 +51,10 @@ const events = [
   //   images: Array.from({ length: 6 }, (_, i) => `/images/WomensDay/${i + 1}.png`),
   // },
   {
-    id: 6,
+    id: 9,
     name: "IDEATHON",
     cover: "/images/Ideathon/cover.jpeg",
-    images: Array.from({ length: 1 }, (_, i) => `/images/WomensDay/${i + 1}.png`),
+    images: Array.from({ length: 24 }, (_, i) => `/images/Ideathon/${i + 1}.png`),
   },
 ];
 
